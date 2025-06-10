@@ -1,0 +1,198 @@
+/* Styles/global.css */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Background color for visibility */
+    z-index: 1000; /* Ensure header stays above content */
+    transition: padding 0.3s ease; /* Smooth transition for padding */
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* Initial padding */
+    max-width: 1200px; /* Optional: max width for larger screens */
+    margin: 0 auto; /* Center the nav */
+}
+
+.nav-left, .nav-right {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-left ul {
+    justify-content: flex-start;
+}
+
+.nav-right ul {
+    justify-content: flex-end;
+}
+
+.nav-left li, .nav-right li {
+    margin: 0 15px;
+    position: relative; /* For positioning dropdown */
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    font-size: 18px; /* Fixed font size */
+    font-weight: bold;
+    display: block;
+    padding: 10px; /* Padding for clickable area */
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #007bff; /* Hover effect */
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Below the parent link */
+    left: 0;
+    background-color: #f8f8f8; /* Match header background */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 1001; /* Above header */
+    min-width: 150px; /* Minimum width for dropdown */
+    opacity: 0; /* For smooth transition */
+    transform: translateY(-10px); /* Start slightly above to prevent horizontal shift */
+    transition: opacity 0.1s ease, transform 0.1s ease; /* Fast transition */
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    font-size: 16px; /* Slightly smaller for sub-items */
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e0e0e0; /* Hover effect for dropdown items */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Move to final position */
+}
+
+/* Ensure dropdown hides instantly when not hovered */
+.dropdown:not(:hover) .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.logo-header {
+    max-height: 60px; /* Initial logo size */
+    width: auto;
+    transition: max-height 0.3s ease; /* Smooth transition for logo size */
+}
+
+/* Scrolled state */
+header.scrolled {
+    padding: 10px 20px; /* Reduced padding when scrolled */
+}
+
+header.scrolled .logo-header {
+    max-height: 40px; /* Smaller logo when scrolled */
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
+
+/* Ensure content doesn't hide behind fixed header */
+body {
+    padding-top: 100px; /* Adjust based on initial header height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .nav-left ul, .nav-right ul {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .nav-left li, .nav-right li {
+        margin: 5px 0;
+    }
+
+    .nav-center {
+        margin: 10px 0;
+    }
+
+    /* Dropdown adjustments for mobile */
+    .dropdown-menu {
+        position: static; /* Stack dropdowns naturally */
+        box-shadow: none; /* Remove shadow for cleaner mobile look */
+        background-color: #f0f0f0; /* Slightly different background for clarity */
+        display: none; /* Ensure hidden by default */
+        opacity: 1; /* No transition on mobile */
+        transform: none; /* No transform on mobile */
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none; /* Disable hover on mobile */
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block; /* Show dropdown when active class is added */
+    }
+
+    body {
+        padding-top: 120px; /* Adjust for header height on mobile */
+    }
+
+    header.scrolled {
+        padding: 5px 20px; /* Further reduced padding on scroll for mobile */
+    }
+
+    header.scrolled .logo-header {
+        max-height: 30px; /* Smaller logo on mobile when scrolled */
+    }
+}
