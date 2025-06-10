@@ -4,10 +4,12 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #f8f8f8;
+      background-color: #ffffff;
       z-index: 1000;
       max-height: 100px;
       transition: max-height 0.3s ease;
+      box-shadow: 0 2px 5px rgba(175, 175, 175, 0.2);
+
   }
 
   .header-nav {
@@ -82,7 +84,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: #f8f8f8;
+      background-color: #ffffff;
       list-style: none;
       padding: 10px 0;
       margin: 0;

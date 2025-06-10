@@ -11,6 +11,20 @@
     z-index: 0; /* Below header */
 }
 
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p{
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     .banner-image {
         width: 100vw;
@@ -21,3 +35,4 @@
         padding-top: 0;
     }
 }
+
