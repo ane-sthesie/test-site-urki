@@ -11,17 +11,17 @@
     z-index: 0; /* Below header */
 }
 
-h1{
+main > h1{
     text-align: center;
     font-size: 3rem;
 }
 
-h2 {
+main > h2 {
     text-align: center;
     font-size: 1.5rem;
 }
 
-p{
+main > p{
     text-align: justify;
 }
 
