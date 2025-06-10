@@ -1,0 +1,23 @@
+/* Styles/index.css */
+.banner-image {
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
+    margin-left: calc(-50vw + 50%); /* Counteract main's centering */
+    margin-right: calc(-50vw + 50%); /* Counteract main's centering */
+    margin-top: 0; /* Remove top margin */
+    padding-top: 0; /* Remove any padding */
+    position: relative; /* Respect z-index */
+    z-index: 0; /* Below header */
+}
+
+@media (max-width: 768px) {
+    .banner-image {
+        width: 100vw;
+        height: auto;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
