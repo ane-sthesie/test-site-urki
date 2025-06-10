@@ -6,25 +6,33 @@ header {
     width: 100%;
     background-color: #f8f8f8; /* Background color for visibility */
     z-index: 1000; /* Ensure header stays above content */
-    transition: padding 0.3s ease; /* Smooth transition for padding */
+    max-height: 100px; /* Initial header height */
+    transition: max-height 0.3s ease; /* Smooth transition for height */
 }
 
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px; /* Initial padding */
-    max-width: 1200px; /* Optional: max width for larger screens */
+    padding: 0 10px; /* 10px margin from edges */
+    width: calc(100% - 20px); /* 10px margin on each side */
     margin: 0 auto; /* Center the nav */
+    height: 100%; /* Fill header height */
 }
 
 .nav-left, .nav-right {
     flex: 1;
+    display: flex;
+    align-items: center; /* Center links vertically */
 }
 
 .nav-center {
     flex: 1;
     text-align: center;
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    justify-content: center;
+    margin: 10px 0; /* Space around logo */
 }
 
 .nav-left ul, .nav-right ul {
@@ -36,14 +44,16 @@ header {
 
 .nav-left ul {
     justify-content: flex-start;
+    margin-left: -5px; /* Offset to align closer to edge */
 }
 
 .nav-right ul {
     justify-content: flex-end;
+    margin-right: -5px; /* Offset to align closer to edge */
 }
 
 .nav-left li, .nav-right li {
-    margin: 0 15px;
+    margin: 0 5px; /* Tighter spacing for edge alignment */
     position: relative; /* For positioning dropdown */
 }
 
@@ -71,10 +81,10 @@ header {
     padding: 10px 0;
     margin: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    z-index: 1001; /* Above header */
+    z-index: 1002; /* Increased to ensure above main */
     min-width: 150px; /* Minimum width for dropdown */
     opacity: 0; /* For smooth transition */
-    transform: translateY(-10px); /* Start slightly above to prevent horizontal shift */
+    transform: translateY(-10px); /* Start slightly above */
     transition: opacity 0.1s ease, transform 0.1s ease; /* Fast transition */
 }
 
@@ -114,7 +124,7 @@ header {
 
 /* Scrolled state */
 header.scrolled {
-    padding: 10px 20px; /* Reduced padding when scrolled */
+    max-height: 60px; /* Reduced height when scrolled */
 }
 
 header.scrolled .logo-header {
@@ -128,6 +138,7 @@ main {
     padding: 20px;
     line-height: 1.6;
     color: #333;
+    z-index: 0; /* Below header and dropdowns */
 }
 
 /* Footer styling */
@@ -138,19 +149,25 @@ footer {
     margin-top: 20px;
     border-top: 1px solid #ddd;
     color: #333;
+    z-index: 0; /* Below header and dropdowns */
 }
 
 /* Ensure content doesn't hide behind fixed header */
 body {
-    padding-top: 100px; /* Adjust based on initial header height */
+    padding-top: 100px; /* Match initial header height */
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    header {
+        max-height: 140px; /* Taller initial height for stacked layout */
+    }
+
     .header-nav {
         flex-direction: column;
         text-align: center;
-        padding: 10px 20px;
+        padding: 10px 10px; /* 10px margin from edges */
+        width: calc(100% - 20px); /* 10px margin on each side */
     }
 
     .nav-left ul, .nav-right ul {
@@ -174,6 +191,7 @@ body {
         display: none; /* Ensure hidden by default */
         opacity: 1; /* No transition on mobile */
         transform: none; /* No transform on mobile */
+        z-index: 1002; /* Ensure above main */
     }
 
     .dropdown:hover .dropdown-menu {
@@ -185,11 +203,11 @@ body {
     }
 
     body {
-        padding-top: 120px; /* Adjust for header height on mobile */
+        padding-top: 140px; /* Match initial header height on mobile */
     }
 
     header.scrolled {
-        padding: 5px 20px; /* Further reduced padding on scroll for mobile */
+        max-height: 90px; /* Reduced height on mobile when scrolled */
     }
 
     header.scrolled .logo-header {
