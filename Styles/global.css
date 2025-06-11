@@ -1,6 +1,6 @@
 /*Polices d'écriture*/
 .open-sans {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 .oswald {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -23,6 +23,14 @@ h1, h2, h3, h4, h5, h6 {
 p{
     font-family: "Open Sans";
     font-weight: 400;
+}
+
+.header-nav a,
+.header-nav  {
+    font-family: "Oswald";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
 }
 
 /* Styles/global.css */
@@ -96,8 +104,6 @@ p{
   .nav-left a, .nav-right a {
       text-decoration: none;
       color: #333;
-      font-size: 18px;
-      font-weight: bold;
       display: block;
       padding: 10px;
   }
