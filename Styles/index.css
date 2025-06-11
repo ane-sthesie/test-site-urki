@@ -26,6 +26,7 @@ main > p{
     text-align: justify;
     padding-left: 20%;
     padding-right: 20%;
+    font-size: 1rem;
 }
 
 /* Styles section lien */
@@ -76,5 +77,6 @@ main > p{
         margin-top: 0;
         padding-top: 0;
     }
+
 }
 
