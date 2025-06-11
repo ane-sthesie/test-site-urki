@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <html lang="fr">
+      <head>
+          <meta charset="UTF-8">
+          <title>Urkirolak Triathlon</title>
+          <link href="Styles/global.css" rel="stylesheet">
+      </head>
+      <body>
+          <header id="main-header">
+              <nav class="header-nav">
+                  <div class="nav-left">
+                      <ul>
+                          <li class="dropdown">
+                              <a href="pages_club/club.html" class="dropdown-toggle">Le Club</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="pages_club/ecole_de_tri.html">École de triathlon</a></li>
+                                  <li><a href="pages_club/entrainements.html">Entraînements</a></li>
+                                  <li><a href="pages_club/adhesion.html">Adhésion</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="pages_triathlon/triathlon.html" class="dropdown-toggle">Le Triathlon</a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="pages_triathlon/epreuves.html">Épreuves</a></li>
+                                  <li><a href="pages_triathlon/inscription.html">Inscription</a></li>
+                                  <li><a href="pages_triathlon/resultats.html">Résultats</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="nav-center">
+                      <a href="index.html"><img src="Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
+                  </div>
+                  <div class="nav-right">
+                      <ul>
+                          <li><a href="pages_adherent/espace_adherent.html">Espace Adhérent</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </header>
+          <main>
+              <h1>Les résultats</h1>
+              <p>
+                  Inter has ruinarum varietates a Nisibi quam tuebatur accitus Vrsicinus, cui nos 
+                  obsecuturos iunxerat imperiale praeceptum, dispicere litis exitialis certamina 
+                  cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosus sane 
+                  milesque semper et militum ductor sed forensibus iurgiis longe discretus, qui metu 
+                  sui discriminis anxius cum accusatores quaesitoresque subditivos sibi consociatos ex 
+                  isdem foveis cerneret emergentes, quae clam palamve agitabantur, occultis Constantium 
+                  litteris edocebat inplorans subsidia, quorum metu tumor notissimus Caesaris exhalaret.
+              </p>
+              <p>
+                  Inter has ruinarum varietates a Nisibi quam tuebatur accitus Vrsicinus, cui nos 
+                  obsecuturos iunxerat imperiale praeceptum, dispicere litis exitialis certamina 
+                  cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosus sane 
+                  milesque semper et militum ductor sed forensibus iurgiis longe discretus, qui metu 
+                  sui discriminis anxius cum accusatores quaesitoresque subditivos sibi consociatos ex 
+                  isdem foveis cerneret emergentes, quae clam palamve agitabantur, occultis Constantium 
+                  litteris edocebat inplorans subsidia, quorum metu tumor notissimus Caesaris exhalaret.
+              </p>
+              <p>
+                  Inter has ruinarum varietates a Nisibi quam tuebatur accitus Vrsicinus, cui nos 
+                  obsecuturos iunxerat imperiale praeceptum, dispicere litis exitialis certamina 
+                  cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosus sane 
+                  milesque semper et militum ductor sed forensibus iurgiis longe discretus, qui metu 
+                  sui discriminis anxius cum accusatores quaesitoresque subditivos sibi consociatos ex 
+                  isdem foveis cerneret emergentes, quae clam palamve agitabantur, occultis Constantium 
+                  litteris edocebat inplorans subsidia, quorum metu tumor notissimus Caesaris exhalaret.
+              </p>
+              <p>
+                  Inter has ruinarum varietates a Nisibi quam tuebatur accitus Vrsicinus, cui nos 
+                  obsecuturos iunxerat imperiale praeceptum, dispicere litis exitialis certamina 
+                  cogebatur abnuens et reclamans, adulatorum oblatrantibus turmis, bellicosus sane 
+                  milesque semper et militum ductor sed forensibus iurgiis longe discretus, qui metu 
+                  sui discriminis anxius cum accusatores quaesitoresque subditivos sibi consociatos ex 
+                  isdem foveis cerneret emergentes, quae clam palamve agitabantur, occultis Constantium 
+                  litteris edocebat inplorans subsidia, quorum metu tumor notissimus Caesaris exhalaret.
+              </p>
+          </main>
+          <footer>
+              <p>© 2025 Urkirolak Triathlon. Tous droits réservés.</p>
+          </footer>
+          <script>
+              window.addEventListener('scroll', function() {
+                  const header = document.getElementById('main-header');
+                  if (window.scrollY > 50) {
+                      header.classList.add('scrolled');
+                  } else {
+                      header.classList.remove('scrolled');
+                  }
+              });
+              document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+                  toggle.addEventListener('click', function(e) {
+                      const parent = this.parentElement;
+                      const isActive = parent.classList.contains('active');
+                      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                      if (!isActive) {
+                          e.preventDefault();
+                          parent.classList.add('active');
+                      }
+                  });
+              });
+              document.addEventListener('click', function(e) {
+                  if (!e.target.closest('.dropdown')) {
+                      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+                  }
+              });
+          </script>
+      </body>
+  </html>
