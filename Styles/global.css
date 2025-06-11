@@ -20,9 +20,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-p{
+p,ul,li{
     font-family: "Open Sans";
     font-weight: 400;
+}
+
+main{
+    font-display: justify;
 }
 
 .header-nav a,
