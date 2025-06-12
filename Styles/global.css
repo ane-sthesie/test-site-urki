@@ -429,7 +429,6 @@ main{
     transform: none;
 }
 
-/* Optionnel : flèche pour indiquer le sous-menu */
 .dropdown-menu .dropdown-submenu > a::after {
     content: "▶";
     font-size: 12px;
