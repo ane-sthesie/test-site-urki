@@ -324,7 +324,7 @@ main{
 }
 
 /* Responsive nav */
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .hamburger {
     display: flex;
     position: absolute;
