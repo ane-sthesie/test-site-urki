@@ -1,5 +1,5 @@
-main{
-    margin-top: 100px;
+.intro{
+    margin-top: 20px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -26,5 +26,27 @@ main{
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
+}
+
+.sport{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.sport-gauche{
+    grid-column: 1 / 2;
+}
+
+.sport-droite{
+    grid-column: 2 / 3;
+}
+
+.parcours-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
