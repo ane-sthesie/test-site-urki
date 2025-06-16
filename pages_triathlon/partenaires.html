@@ -7,6 +7,60 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+      
+          <style>
+            .partenaires-section{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 40px;
+                padding: 20px;
+            }
+            .partenaire-logo {
+                display: block;
+                max-width: 100%;
+                height: auto;              
+            }
+            .partenaire-link-velo-news{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-tdr{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-pbo{
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-paries{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-thalazur{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }   
+            .partenaire-link-bizipoz{
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-bidean-trail{
+                grid-column: 4 / 5;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-superu{
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+
+            }
+            .partenaires-section a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+          </style>
       </head>
       <body>
           <header id="main-header">
@@ -52,8 +106,40 @@
               </nav>
           </header>
           <main>
-              <h1>Devenir Partenaires</h1>
+              <h1>Nos partenaires</h1>
+              <p>Nous tenons à remercier nos précieux partenaires qui soutiennent le Triathlon de Saint-Jean-de-Luz. 
+                Leur engagement et leur soutien sont essentiels pour la réussite de cet événement.</p>
+            
+                <section class="partenaires-section">
+              <a href="https://www.velonews64.fr/" class="partenaire-link-velo-news">
+                  <img src="../Images/logo-velo-news-64.avif" alt="Vélo News 64" class="partenaire-logo"></a>
+
+              <a href="https://www.instagram.com/terrederunningbidart/" class="partenaire-link-tdr">
+                  <img src="../Images/logo-TDR.png" alt="Terre De Running Bidart" class="partenaire-logo"></a>
+
+              <a href="https://pb-organisation.com/" class="partenaire-link-pbo">
+                  <img src="../Images/logo-pbo.jpeg" alt="PB organisation" class="partenaire-logo"></a>
+
+              <a href="https://www.paries.fr/" class="partenaire-link-paries">
+                  <img src="../Images/logo-paries.jpg" alt="Pariès" class="partenaire-logo"></a>
+
+              <a href="https://www.thalazur.fr/" class="partenaire-link-thalazur">
+                  <img src="../Images/logo-thalazur.svg" alt="Thalazur" class="partenaire-logo"></a>
               
+              <a href="https://www.bizipoz.com/" class="partenaire-link-bizipoz">
+                  <img src="../Images/logo-bizipoz.svg" alt="Bizipoz" class="partenaire-logo"></a>
+              
+              <a href="https://bideantrail.com/" class="partenaire-link-bidean-trail">
+                  <img src="../Images/logo-bidean-trail.webp" alt="Bidean Trail" class="partenaire-logo"></a>
+              
+              <a href="https://www.magasins-u.com/magasin/superu-ustaritz" class="partenaire-link-superu">
+                  <img src="../Images/logo-super-u.svg" alt="Super U Ustaritz" class="partenaire-logo"></a>    
+
+                </section>
+
+              <h2>Devenir partenaire</h2>
+              <p>Si vous souhaitez devenir partenaire du Triathlon de Saint-Jean-de-Luz, n'hésitez pas à nous contacter : <a href="mailto:sjdl.triathlon@gmail.com">sjdl.triathlon@gmail.com</a><br> 
+                  Votre soutien est précieux pour nous aider à organiser cet événement et à promouvoir le triathlon dans notre région.</p>
           </main>
           <footer>
               <p>© 2025 Urkirolak Triathlon. Tous droits réservés.</p>
