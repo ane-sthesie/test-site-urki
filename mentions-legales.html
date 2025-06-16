@@ -2,8 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Urkirolak Triathlon - Contact</title>
+        <title>Urkirolak Triathlon</title>
         <link href="Styles/global.css" rel="stylesheet">
+        <link href="Styles/index.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -40,10 +41,15 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </div>                
                 <div class="nav-center">
                     <a href="index.html"><img src="Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
                 </div>
+                <button class="hamburger" id="hamburger-menu" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="nav-right">
                     <ul>
                         <li><a href="contact.html">Contact</a></li>
@@ -52,22 +58,56 @@
             </nav>
         </header>
         <main>
-            <h1>Nous contacter</h1>
-            
+            <h1>Mentions Légales</h1>
+            <h2>Éditeur du site</h2>
+            <p>Ce site est edité par <strong>Urkirolak Triathlon</strong>.<br>
+            Association Loi 1901<br>
+            Siège social : 123 Rue de la Triathlon, 64500 Saint-Jean-de-Luz, France<br>
+            Email : <a href="mailto: urkirolak.triathlon@gmail.com"> urkirolak.triathlon@gmail.com </a></p><br>
+
+            <h2>Directeur de la publication</h2>
+            <p>Le directeur de la publication est <strong>Ane Artola Rodriguez</strong>.</p><br>
+
+            <h2>Hébergement</h2>
+            <p>Ce site est hébergé par <strong>GitHub Pages</strong>.<br>
+            Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</p><br>
+            <h2>Propriété intellectuelle</h2>
+            <p>Les contenus présents sur ce site (textes, photos, vidéos, logo, etc.) sont la propriété exclusive de l’association Urkirolak 
+                Triathlon ou de leurs auteurs respectifs. Toute reproduction ou représentation, totale ou partielle, sans autorisation préalable 
+                est interdite.</p>
+            <h2>Responsabilité</h2>
+            <p>Urkirolak Triathlon s’efforce d’assurer au mieux l’exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, 
+                l’association ne saurait être tenue responsable des erreurs ou omissions, ni d’une mauvaise utilisation des informations.</p>
+            <h2>Données personnelles</h2>
+            <p>Les informations collectées via les formulaires du site (inscription, contact, etc.) sont destinées uniquement au bon fonctionnement 
+                de l’association et ne seront jamais cédées à des tiers. Conformément à la loi Informatique et Libertés et au RGPD, vous disposez 
+                d’un droit d’accès, de rectification et de suppression de vos données personnelles. Pour l’exercer, veuillez nous contacter à 
+                l’adresse email indiquée ci-dessus.</p>
+            <h2>Cookies</h2>
+            <p>Le site peut utiliser des cookies pour améliorer l’expérience utilisateur et collecter des statistiques anonymes. Vous pouvez 
+                refuser l’enregistrement de cookies en configurant votre navigateur.</p>
         </main>
         <footer>
             <p>© 2025 Urkirolak Triathlon. Tous droits réservés.</p>
             <p><a href="mentions-legales.html">Mentions légales</a></p>
         </footer>
         <script>
-            window.addEventListener('scroll', function() {
-                const header = document.getElementById('main-header');
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
+            // Burger menu
+            const hamburger = document.getElementById('hamburger-menu');
+            const headerNav = document.querySelector('.header-nav');
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                headerNav.classList.toggle('menu-open');
+            });
+
+            // Fermer le menu si on clique ailleurs
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.header-nav')) {
+                    headerNav.classList.remove('menu-open');
                 }
             });
+
+            // Dropdown (mobile et desktop)
             document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
                 toggle.addEventListener('click', function(e) {
                     const parent = this.parentElement;
@@ -79,9 +119,19 @@
                     }
                 });
             });
-            document.addEventListener('click', function(e) {
-                if (!e.target.closest('.dropdown')) {
-                    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+
+            document.querySelectorAll('.nav-left a, .nav-right a').forEach(link => {
+                link.addEventListener('click', () => {
+                    headerNav.classList.remove('menu-open');
+                });
+            });
+
+            window.addEventListener('scroll', function() {
+                const header = document.getElementById('main-header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
                 }
             });
         </script>
