@@ -50,3 +50,25 @@
     border-radius: 10px;
 }
 
+@media (max-width: 800px) {
+    .intro,
+    .sport {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .intro-photo,
+    .intro-texte,
+    .sport-gauche,
+    .sport-droite {
+        grid-column: 1 / 2 !important;
+        grid-row: auto;
+        padding: 10px;
+    }
+    .intro-texte {
+        order: 2;
+    }
+    .intro-photo {
+        order: 1;
+    }
+}
+
