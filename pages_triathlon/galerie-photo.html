@@ -2,11 +2,65 @@
   <html lang="fr">
       <head>
           <meta charset="UTF-8">
-          <title>Urkirolak Triathlon - Adhésion</title>
+          <title>Triathlon de Saint-Jean-de-Luz - Partenaires</title>
           <link href="../Styles/global.css" rel="stylesheet">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+      
+          <style>
+            .partenaires-section{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 40px;
+                padding: 20px;
+            }
+            .partenaire-logo {
+                display: block;
+                max-width: 100%;
+                height: auto;              
+            }
+            .partenaire-link-velo-news{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-tdr{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-pbo{
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+            }
+            .partenaire-link-paries{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-thalazur{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }   
+            .partenaire-link-bizipoz{
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-bidean-trail{
+                grid-column: 4 / 5;
+                grid-row: 2 / 3;
+            }
+            .partenaire-link-superu{
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+
+            }
+            .partenaires-section a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+          </style>
       </head>
       <body>
           <header id="main-header">
@@ -14,30 +68,30 @@
                   <div class="nav-left">
                       <ul>
                           <li class="dropdown">
-                              <a href="club.html" class="dropdown-toggle">Le Club</a>
+                              <a href="../pages_club/club.html" class="dropdown-toggle">Le Club</a>
                               <ul class="dropdown-menu">
-                                <li><a href="adhesion.html">Adhésion</a></li>
-                                <li><a href="entrainements.html">Entraînements</a></li>                               
-                                <li><a href="ecole_de_tri.html">École de triathlon</a></li> 
-                                <li><a href="comite.html">Comité directeur</a></li>
+                                <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
+                                <li><a href="../pages_club/entrainements.html">Entraînements</a></li>                               
+                                <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li> 
+                                <li><a href="../pages_club/comite.html">Comité directeur</a></li>
                               </ul>
                           </li>
                           <li class="dropdown">
-                              <a href="../pages_triathlon/triathlon.html" class="dropdown-toggle">Le Triathlon</a>
+                              <a href="triathlon.html" class="dropdown-toggle">Le Triathlon</a>
                               <ul class="dropdown-menu">
                                   <li class="dropdown dropdown-submenu">
-                                      <a href="../pages_triathlon/triathlon.html" class="dropdown-toggle">Épreuves</a>
+                                      <a href="triathlon.html" class="dropdown-toggle">Épreuves</a>
                                       <ul class="dropdown-menu">
-                                          <li><a href="../pages_triathlon/formats/triathlon-s.html">Format S</a></li>
-                                          <li><a href="../pages_triathlon/formats/triathlon-m.html">Format M</a></li>
-                                          <li><a href="../pages_triathlon/formats/triathlon-l.html">Format L</a></li>
+                                          <li><a href="formats/triathlon-s.html">Format S</a></li>
+                                          <li><a href="formats/triathlon-m.html">Format M</a></li>
+                                          <li><a href="formats/triathlon-l.html">Format L</a></li>
                                       </ul>
                                   </li>
                                   <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
                                   <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
-                                  <li><a href="../pages_triathlon/galerie-photo.html">Galerie Photo</a></li>
-                                  <li><a href="../pages_triathlon/benevoles.html">Bénévoles</a></li>
-                                  <li><a href="../pages_triathlon/partenaires.html">Partenaires</a></li>
+                                  <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                                  <li><a href="benevoles.html">Bénévoles</a></li>
+                                  <li><a href="partenaires.html">Partenaires</a></li>
                               </ul>
                           </li>
                       </ul>
@@ -53,11 +107,6 @@
               </nav>
           </header>
           <main>
-              <h1>Adhésion</h1>
-              <p>Pour devenir membre, n'hésitez pas à nous écrire : <a href="mailto: urkirolak.triathlon@gmail.com"> urkirolak.triathlon@gmail.com </a></p>
-              <h2>Tarifs d'adhésion</h2>
-              <p>Adhésion annuelle pour les adultes : 140€ + Licence FFTri (Loisir ou Compétition)</p>
-              <p>Adhésion annuelle pour les jeunes (moins de 18 ans) : 85€ + Licence (Loisir ou Compétition)</p>
               
           </main>
           <footer>
