@@ -82,6 +82,12 @@ footer a{
   color: #993333ff;
 }
 
+footer img{
+  width: 30%;
+  height: auto;
+  margin-right: 10px;
+}
+
 main a{
   color: #993333ff;
 }
