@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 1024px) {
+    .intro {
+        margin-top: 0;
+        padding-top: 0;
+    }
     .intro,
     .sport {
         grid-template-columns: 1fr;
@@ -69,6 +73,24 @@
     }
     .intro-photo {
         order: 1;
+    }
+
+    .parcours-image {
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .intro-image {
+        width: 100vw;
+        height: auto;
+        display: block;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        margin-top: 0;         /* Colle l'image au header */
+        padding-top: 0;
+        position: relative;
     }
 }
 
