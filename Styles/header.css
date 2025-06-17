@@ -197,7 +197,7 @@ header.scrolled .logo-header {
 .menu-burger a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: #000000;
   display: block;
   transition: 0.3s;
@@ -215,7 +215,7 @@ header.scrolled .logo-header {
   position: absolute;
   top: 0; left: 0;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .menu-burger ul#burger-main-menu {
@@ -253,6 +253,7 @@ header.scrolled .logo-header {
   font-size: 56px;
   color: #000;
   cursor: pointer;
+  z-index: 10; /* Assure que la croix est au-dessus des menus */
 }
 
 /* Icône burger */
