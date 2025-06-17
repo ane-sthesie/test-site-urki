@@ -18,7 +18,7 @@
 /* === Typographie globale === */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -27,15 +27,15 @@ p{
   }
 
   h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2{
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   h3{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
 p, ul, li {
