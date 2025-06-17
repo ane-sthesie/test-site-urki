@@ -27,13 +27,7 @@ p, ul, li {
   font-weight: 400;
 }
 
-.header-nav a {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-}
+
 
 /* === Mise en page générale === */
 body {

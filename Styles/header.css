@@ -124,6 +124,14 @@ header.scrolled .logo-header {
   color: #333;
 }
 
+.header-nav a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
 .dropdown-menu a:hover {
   background-color: #e0e0e0;
 }
@@ -189,7 +197,7 @@ header.scrolled .logo-header {
 .menu-burger a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2.2rem;
   color: #000000;
   display: block;
   transition: 0.3s;
@@ -223,7 +231,7 @@ header.scrolled .logo-header {
 
 .burger-back {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2rem;
   display: block;
   margin-bottom: 1em;
 }
@@ -240,9 +248,11 @@ header.scrolled .logo-header {
 
 .menu-burger .close {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 10px;
+  right: 35px;
+  font-size: 56px;
+  color: #000;
+  cursor: pointer;
 }
 
 /* Icône burger */
@@ -257,8 +267,8 @@ header.scrolled .logo-header {
 /* Flèche à droite des liens ayant un sous-menu dans le menu burger */
 .menu-burger .burger-link::after {
   content: "▶";
-  font-size: 1rem;
-  margin-left: 10px;
+  font-size: 1.5rem;
+  margin-left: 16px;
   vertical-align: middle;
   color: #000;
   display: inline-block;
