@@ -4,55 +4,105 @@
           <meta charset="UTF-8">
           <title>Triathlon de Saint-Jean-de-Luz</title>
           <link rel="icon" href="../Images/favicon.png" type="image/x-icon">
+          <link href="../Styles/header.css" rel="stylesheet">
           <link href="../Styles/global.css" rel="stylesheet">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       </head>
       <body>
-          <header id="main-header">
-              <nav class="header-nav">
-                  <div class="nav-left">
-                      <ul>
-                          <li class="dropdown">
-                              <a href="../pages_club/club.html" class="dropdown-toggle">Le Club</a>
-                              <ul class="dropdown-menu">
-                                <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
-                                <li><a href="../pages_club/entrainements.html">Entraînements</a></li>                               
-                                <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li> 
-                                <li><a href="../pages_club/comite.html">Comité directeur</a></li>
-                              </ul>
-                          </li>
-                          <li class="dropdown">
-                              <a href="triathlon.html" class="dropdown-toggle">Le Triathlon</a>
-                              <ul class="dropdown-menu">
-                                  <li class="dropdown dropdown-submenu">
-                                      <a href="triathlon.html" class="dropdown-toggle">Épreuves</a>
-                                      <ul class="dropdown-menu">
-                                          <li><a href="formats/triathlon-s.html">Format S</a></li>
-                                          <li><a href="formats/triathlon-m.html">Format M</a></li>
-                                          <li><a href="formats/triathlon-l.html">Format L</a></li>
-                                      </ul>
-                                  </li>
-                                  <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
-                                  <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
-                                  <li><a href="galerie-photo.html">Galerie Photo</a></li>
-                                  <li><a href="benevoles.html">Bénévoles</a></li>
-                                  <li><a href="partenaires.html">Partenaires</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="nav-center">
-                      <a href="../index.html"><img src="../Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
-                  </div>
-                  <div class="nav-right">
-                      <ul>
-                          <li><a href="../contact.html">Contact</a></li>
-                      </ul>
-                  </div>
-              </nav>
-          </header>
+           <header id="main-header">
+        <nav class="header-nav">
+            <div class="nav-left">
+                <ul>
+                    <li class="dropdown">
+                        <a href="../pages_club/club.html" class="dropdown-toggle">Le Club</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
+                            <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
+                            <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
+                            <li><a href="../pages_club/comite.html">Comité directeur</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="triathlon.html" class="dropdown-toggle">Le Triathlon</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a href="triathlon.html" class="dropdown-toggle">Épreuves</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="formats/triathlon-s.html">Format S</a></li>
+                                    <li><a href="formats/triathlon-m.html">Format M</a></li>
+                                    <li><a href="formats/triathlon-l.html">Format L</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
+                            <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
+                            <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                            <li><a href="benevoles.html">Bénévoles</a></li>
+                            <li><a href="partenaires.html">Partenaires</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-center">
+                <a href="../index.html"><img src="../Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Menu burger mobile -->
+            <div id="menu-burger" class="menu-burger">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul id="burger-main-menu">
+                    <li>
+                        <a href="#" class="burger-link" data-target="club">Le Club</a>
+                    </li>
+                    <li>
+                        <a href="#" class="burger-link" data-target="triathlon">Le Triathlon</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Sous-menu Le Club -->
+                <ul class="burger-submenu" id="submenu-club">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
+                    <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
+                    <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
+                    <li><a href="../pages_club/comite.html">Comité directeur</a></li>
+                </ul>
+                <!-- Sous-menu Le Triathlon -->
+                <ul class="burger-submenu" id="submenu-triathlon">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li>
+                        <a href="#" class="burger-link" data-target="epreuves">Épreuves</a>
+                    </li>
+                    <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
+                    <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
+                    <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                    <li><a href="benevoles.html">Bénévoles</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                </ul>
+                <!-- Sous-sous-menu Épreuves -->
+                <ul class="burger-submenu" id="submenu-epreuves">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li><a href="formats/triathlon-s.html">Format S</a></li>
+                    <li><a href="formats/triathlon-m.html">Format M</a></li>
+                    <li><a href="formats/triathlon-l.html">Format L</a></li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </nav>
+    </header>
           <main>
               <h1>Triathlon de Saint-Jean-de-Luz</h1>
               <h2>Un défi entre océan et montagne 🌊⛰️</h2>
