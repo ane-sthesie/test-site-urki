@@ -14,21 +14,16 @@
 
 main > h1{
     text-align: center;
-    font-family: "Oswald";
-    font-size: 3rem;
 }
 
 main > h2 {
     text-align: center;
-    font-family: "Oswald";
-    font-size: 1.5rem;
 }
 
 main > p{
     text-align: justify;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 1rem;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 /* Styles section lien */
@@ -85,7 +80,7 @@ main > p{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .banner-image {
         width: 100vw;
         height: auto;
@@ -93,6 +88,17 @@ main > p{
         margin-right: calc(-50vw + 50%);
         margin-top: 0;
         padding-top: 0;
+    }
+
+    main > p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .index-section-liens-site{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }

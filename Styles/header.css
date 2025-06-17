@@ -148,10 +148,8 @@ header.scrolled .logo-header {
   transform: translateY(-10px);
 }
 
-/* Flèche visible à droite de tous les sous-menus sur petit écran */
-@media (max-width: 1024px) {
-  .nav-left li.dropdown > a::after,
-  .nav-right li.dropdown > a::after {
+.nav-left li.dropdown-submenu > a::after,
+  .nav-right li.dropdown-submenu > a::after {
     content: "▶";
     font-size: 0.8rem;
     margin-left: 6px;
@@ -160,7 +158,8 @@ header.scrolled .logo-header {
     pointer-events: none;
   }
 
-  /* Augmente la hauteur du header sur petit écran */
+@media (max-width: 1024px) {
+    /* Augmente la hauteur du header sur petit écran */
   header {
     max-height: 130px;
     min-height: 90px;
