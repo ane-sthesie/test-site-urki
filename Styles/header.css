@@ -165,8 +165,7 @@ header.scrolled .logo-header {
 @media (max-width: 1024px) {
     /* Augmente la hauteur du header sur petit écran */
   header {
-    max-height: 130px;
-    min-height: 90px;
+    max-height: 200px;
   }
   .logo-header {
     max-height: 80px;
@@ -174,8 +173,7 @@ header.scrolled .logo-header {
 
   /* Header rétréci au scroll sur petit écran */
   header.scrolled {
-    max-height: 60px;
-    min-height: 60px;
+    max-height: 150px;
   }
   header.scrolled .logo-header {
     max-height: 40px;
