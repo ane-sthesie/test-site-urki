@@ -40,7 +40,11 @@ main > p{
     margin: 20px 0;
     text-align: center;
     justify-items: center;
+    gap: 30px;
+}
 
+.index-section-liens-site h2 {
+  margin-bottom: 10px;
 }
 
 .index-titre-lien-club{
@@ -67,6 +71,17 @@ main > p{
     object-fit: cover;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+.index-club-image,
+.index-triathlon-image {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.index-club-image:hover,
+.index-triathlon-image:hover {
+  transform: scale(1.05);
 }
 
 

@@ -58,213 +58,7 @@ footer {
   color: #333;
 }
 
-/* === Header et navigation === */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  z-index: 1000;
-  max-height: 100px;
-  transition: max-height 0.3s ease;
-  box-shadow: 0 5px 10px rgba(175, 175, 175, 0.2);
-}
-
-header.scrolled {
-  max-height: 60px;
-}
-
-header.scrolled .logo-header {
-  max-height: 40px;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  width: calc(100% - 20px);
-  margin: 0 auto;
-  height: 100%;
-}
-
-.nav-left, .nav-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.nav-left {
-  justify-content: flex-start;
-}
-
-.nav-right {
-  justify-content: flex-end;
-}
-
-.nav-center {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-}
-
-.nav-left ul, .nav-right ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-left li, .nav-right li {
-  margin: 0 10px;
-  position: relative;
-}
-
-.nav-right li:last-child {
-  margin-right: 0;
-}
-
-.nav-left a, .nav-right a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-  padding: 2px 10px;
-}
-
-.nav-left a:hover, .nav-right a:hover {
-  color: #007bff;
-}
-
-/* === Dropdown === */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #ffffff;
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1002;
-  min-width: 175px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.1s ease, transform 0.1s ease;
-}
-
-.dropdown-menu li {
-  margin: relative;
-}
-
-.dropdown-menu li ul {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%; /* décale à droite */
-  background-color: #ffffff;
-  min-width: 175px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1003;
-  padding: 10px 0;
-}
-
-/* Affiche le sous-sous-menu au hover */
-.dropdown-menu li:hover > ul {
-  display: block;
-}
-
-.dropdown-menu a {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.dropdown-menu a:hover {
-  background-color: #e0e0e0;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.dropdown:not(:hover) .dropdown-menu {
-  display: none;
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-/* Flèche visible à droite de tous les sous-menus sur petit écran */
-@media (max-width: 1024px) {
-  .nav-left li.dropdown > a::after,
-  .nav-right li.dropdown > a::after {
-    content: "▶";       /* flèche droite */
-    font-size: 0.8rem;
-    margin-left: 6px;
-    vertical-align: middle;
-    color: #007bff;
-    pointer-events: none;
-  }
-}
-
-@media (min-width: 1025px) {
-  
-  .nav-left li.dropdown-submenu > a::after,
-  .nav-right li.dropdown-submenu > a::after {
-    content: "▶";
-    font-size: 0.8rem;
-    margin-left: 6px;
-    vertical-align: middle;
-    color: #000000;
-    pointer-events: none;
-  }
-}
-
-
-/* === Logo === */
-.logo-header {
-  max-height: 60px;
-  width: auto;
-  transition: max-height 0.3s ease;
-}
-
-/* === Images principales === */
-.banner-image {
-  width: 100%;
-  height: auto;
-}
-
-.index-section-liens-site {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-.index-section-liens-site h2 {
-  margin-bottom: 10px;
-}
-
-.index-club-image,
-.index-triathlon-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.index-club-image:hover,
-.index-triathlon-image:hover {
-  transform: scale(1.05);
-}
-
-/* CSS */
+/* boutons */
 .button {
   background-color: #fff;
   border: 0 solid #e2e8f0;
@@ -300,54 +94,92 @@ header.scrolled .logo-header {
   }
 }
 
-/* === Responsive burger menu === */
-.hamburger, .close-menu {
-  display: none; /* par défaut caché sur desktop */
+/* Menu Burger */
+.menu-burger {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: -100vw;         /* caché à gauche */
+  width: 100vw;         /* prend toute la largeur */
+  height: 100vh;        /* prend toute la hauteur */
+  background-color: #ffffff;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  overflow-y: auto;
 }
 
-@media (max-width: 1024px) {
-  .nav-left, .nav-right {
+/* Sidenav menu links */
+.menu-burger a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-burger a:hover {
+  color: #111;
+}
+
+.menu-burger ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.menu-burger.active {
+  left: 0;
+}
+
+/* Close btn */
+.menu-burger .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #1C2526;
+  margin: 6px 0;
+}
+
+/* On cache le burger en desktop */
+@media (min-width: 1025px) {
+  .header-nav {
+    display: flex;
+  }
+  
+  .burger-icon {
     display: none;
   }
+  
+  .menu-burger {
+    display: none;
+  }
+}
 
-  .hamburger {
+/* On affiche le burger en mobile */
+@media (max-width: 1024px) {
+  .nav-left {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  
+  .burger-icon {
     display: block;
-    background: none;
-    border: none;
     cursor: pointer;
-    z-index: 1001;
   }
-
-  .hamburger span {
+  
+  .menu-burger {
     display: block;
-    width: 30px;
-    height: 3px;
-    background: #333;
-    margin: 6px 0;
-    transition: all 0.3s ease;
-  }
-
-  .header-nav.menu-open .nav-left,
-  .header-nav.menu-open .nav-right {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-  }
-
-  .close-menu {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 1001;
   }
 }
