@@ -16,7 +16,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .intro-texte{
@@ -47,7 +47,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 @media (max-width: 1024px) {
@@ -79,7 +79,6 @@
         width: 90%;
         height: auto;
         object-fit: cover;
-        border-radius: 0px;
     }
 
     .intro-image {
@@ -91,6 +90,7 @@
         margin-top: 0;         /* Colle l'image au header */
         padding-top: 0;
         position: relative;
+        border-radius: 0;
     }
 }
 
