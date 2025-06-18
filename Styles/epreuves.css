@@ -19,7 +19,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .intro-texte > .button:hover{
@@ -35,28 +35,35 @@
     color: #ffffff;
     justify-content: center;
     margin-bottom: 20px;
+    padding: 0 40px 0 40px;
 }
 
 .intro-texte h1 {
-    margin-bottom: 0.5rem; /* Ajuste l'espace sous le titre */
+    margin-bottom: 0.5rem; 
 }
 .intro-texte p {
-    margin-top: 0; /* Supprime tout éventuel espace au-dessus du texte */
+    margin-top: 0; 
 }
 
 .intro-texte a {
-    align-self: start; /* ou 'flex-start' pour caler le bouton à gauche */
+    align-self: start; 
 }
 
 .sport{
     margin-top: 20px;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
 }
 
 .sport-gauche{
     grid-column: 1 / 2;
+    padding: 0 40px 0 40px;
 }
 
 .sport-droite{
@@ -67,7 +74,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .boutons-parcours{
@@ -75,6 +82,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
+    gap: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -100,7 +108,7 @@
         order: 2;
         background-color: #993333ff;
         border-radius: 10px;
-        padding: 20px;
+        padding: 0 40px 30px 40px;
     }
     .intro-photo {
         order: 1;
@@ -123,5 +131,26 @@
         position: relative;
         border-radius: 0;
     }
+
+    .sport {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .sport-gauche,
+    .sport-droite {
+        grid-column: 1 / 2 !important;
+        grid-row: auto;
+        padding: 10px;
+    }
+
+    .sport-droite img{
+        display:block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
