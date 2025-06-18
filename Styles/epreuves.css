@@ -5,6 +5,9 @@
     grid-template-rows: 1fr;
     padding: 20px;
     gap: 20px;
+    background-color: #993333ff;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .intro-photo{
@@ -19,13 +22,30 @@
     border-radius: 3px;
 }
 
+.button:hover{
+    background-color: #1c2526ff;
+}
+
 .intro-texte{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 20px;
     font-size: 1rem;
     line-height: 1.5;
     text-align: justify;
+    color: #ffffff;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.intro-texte h1 {
+    margin-bottom: 0.5rem; /* Ajuste l'espace sous le titre */
+}
+.intro-texte p {
+    margin-top: 0; /* Supprime tout éventuel espace au-dessus du texte */
+}
+
+.intro-texte a {
+    align-self: start; /* ou 'flex-start' pour caler le bouton à gauche */
 }
 
 .sport{
@@ -61,6 +81,7 @@
     .intro {
         margin-top: 0;
         padding-top: 0;
+        background-color: transparent;
     }
     .intro,
     .sport {
@@ -77,6 +98,9 @@
     }
     .intro-texte {
         order: 2;
+        background-color: #993333ff;
+        border-radius: 10px;
+        padding: 20px;
     }
     .intro-photo {
         order: 1;
