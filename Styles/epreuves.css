@@ -22,7 +22,7 @@
     border-radius: 3px;
 }
 
-.button:hover{
+.intro-texte > .button:hover{
     background-color: #1c2526ff;
 }
 
