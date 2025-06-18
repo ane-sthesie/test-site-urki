@@ -11,57 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
-        .partenaires-section{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+        .partenaires-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             gap: 40px;
             padding: 20px;
         }
         .partenaire-logo {
             display: block;
             max-width: 100%;
-            height: auto;              
-        }
-        .partenaire-link-velo-news{
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-        .partenaire-link-tdr{
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-        }
-        .partenaire-link-pbo{
-            grid-column: 4 / 5;
-            grid-row: 1 / 2;
-        }
-        .partenaire-link-paries{
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-        .partenaire-link-thalazur{
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-        }   
-        .partenaire-link-bizipoz{
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-        }
-        .partenaire-link-bidean-trail{
-            grid-column: 4 / 5;
-            grid-row: 2 / 3;
-        }
-        .partenaire-link-superu{
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-
+            height: auto;
         }
         .partenaires-section a {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
     </style>
 </head>
 <body>
@@ -163,30 +128,24 @@
             Leur engagement et leur soutien sont essentiels pour la réussite de cet événement.</p>
         
         <section class="partenaires-section">
+            <!-- Ligne 1 : 4 logos -->
             <a href="https://www.velonews64.fr/" target="_blank" rel="noopener" class="partenaire-link-velo-news">
                 <img src="../Images/logo-velo-news-64.avif" alt="Vélo News 64" class="partenaire-logo"></a>
-
-            <a href="https://www.instagram.com/terrederunningbidart/" target="_blank" rel="noopener" class="partenaire-link-tdr">
-                <img src="../Images/logo-TDR.png" alt="Terre De Running Bidart" class="partenaire-logo"></a>
-
+            <a href="https://mairie-ciboure.fr/" target="_blank" rel="noopener" class="partenaire-link-ciboure">
+                <img src="../Images/logo-ciboure.png" alt="Ciboure" class="partenaire-logo"></a>
             <a href="https://pb-organisation.com/" target="_blank" rel="noopener" class="partenaire-link-pbo">
                 <img src="../Images/logo-pbo.jpeg" alt="PB organisation" class="partenaire-logo"></a>
-
+            <a href="https://www.magasins-u.com/magasin/superu-ustaritz" target="_blank" rel="noopener" class="partenaire-link-superu">
+                <img src="../Images/logo-super-u.svg" alt="Super U Ustaritz" class="partenaire-logo"></a>
+            <!-- Ligne 2 : 4 logos -->
             <a href="https://www.paries.fr/" target="_blank" rel="noopener" class="partenaire-link-paries">
                 <img src="../Images/logo-paries.jpg" alt="Pariès" class="partenaire-logo"></a>
-
             <a href="https://www.thalazur.fr/" target="_blank" rel="noopener" class="partenaire-link-thalazur">
                 <img src="../Images/logo-thalazur.svg" alt="Thalazur" class="partenaire-logo"></a>
-            
             <a href="https://www.bizipoz.com/" target="_blank" rel="noopener" class="partenaire-link-bizipoz">
                 <img src="../Images/logo-bizipoz.svg" alt="Bizipoz" class="partenaire-logo"></a>
-            
             <a href="https://bideantrail.com/" target="_blank" rel="noopener" class="partenaire-link-bidean-trail">
                 <img src="../Images/logo-bidean-trail.webp" alt="Bidean Trail" class="partenaire-logo"></a>
-            
-            <a href="https://www.magasins-u.com/magasin/superu-ustaritz" target="_blank" rel="noopener" class="partenaire-link-superu">
-                <img src="../Images/logo-super-u.svg" alt="Super U Ustaritz" class="partenaire-logo"></a>    
-
         </section>
 
         <h2>Devenir partenaire</h2>
