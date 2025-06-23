@@ -101,6 +101,13 @@ main > p{
         align-items: center;
     }
 
+    .index-club-image,
+    .index-triathlon-image {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
 }
 
 
