@@ -1,255 +1,248 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Triathlon de Saint-Jean-de-Luz - Bénévoles</title>
-        <link rel="icon" href="../Images/favicon.png" type="image/x-icon">
-        <link href="../Styles/header.css" rel="stylesheet">
-        <link href="../Styles/global.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon de Saint-Jean-de-Luz - Bénévoles</title>
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon">
+    <link href="../Styles/header.css" rel="stylesheet">
+    <link href="../Styles/global.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .intro-benevoles {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            grid-template-rows: 1fr;
+            padding: 20px;
+            gap: 100px;
+            align-items: center;
+        }
+        .intro-titre-benevoles {
+            grid-column: 1/2;
+            align-self: center;
+            font-size: 4rem;
+            text-align: right;
+        }
+        .intro-lien-benevoles {
+            grid-column: 2/3;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .intro-image-benevoles {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            display: block;
+            max-width: 100%;
+        }
+        .missions {
+            margin: 20px;
+            padding: 20px 0 30px 50px;
+            background-color: #006633ff;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        .rejoindre{
+            margin: 20px;
+            background-color: #993333ff;
+            border-radius: 5px;
+            padding: 20px 0 30px 50px;
+            color: #ffffff;
+        }
+        .rejoindre .button:hover {
+            background-color: #1c2526ff;
+        }
+        @media (max-width: 1024px) {
             .intro-benevoles {
-                margin-top: 20px;
-                display: grid;
-                grid-template-columns: 1fr 2fr; 
-                grid-template-rows: 1fr;
-                padding: 20px;
-                gap: 100px;
-                align-items: center;
-            }
-
-            .intro-titre-benevoles {
-                grid-column: 1/2;
-                align-self: center;
-                font-size: 4rem;
-                text-align: right;
-            }
-
-            .intro-lien-benevoles {
-                grid-column: 2/3;
-                width: 100%;
-                height: 100%;
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0;
+                margin-top: 0;
+            }
+            .intro-lien-benevoles {
+                order: 1;
+                width: 100vw;
+                max-width: 100vw;
                 justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
             }
-
             .intro-image-benevoles {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 5px;
+                width: 100vw;
+                max-width: 100vw;
+                height: auto;
+                border-radius: 0;
                 display: block;
-                max-width: 100%;
+                margin: 0;
             }
-
-            .missions {
-                margin: 20px;
-                padding: 20px 0 30px 50px;
-                background-color: #006633ff;
-                border-radius: 5px;
-                color: #ffffff;
+            .intro-titre-benevoles {
+                order: 2;
+                text-align: center;
+                font-size: 2.2rem;
+                margin: 0 auto;
+                width: 100%;
             }
-
-            .rejoindre{
-                margin: 20px;
-                background-color: #993333ff;
-                border-radius: 5px;
-                padding: 20px 0 30px 50px;
-                color: #ffffff;
+            .missions, .rejoindre {
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
             }
-            
-            .rejoindre .button:hover {
-                background-color: #1c2526ff;
-            }
-
-            @media (max-width: 1024px) {
-                .intro-benevoles {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    padding: 0;
-                    margin-top: 0;
-                }
-                .intro-lien-benevoles {
-                    order: 1;
-                    width: 100vw;
-                    max-width: 100vw;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 0;
-                    margin: 0;
-                }
-                .intro-image-benevoles {
-                    width: 100vw;
-                    max-width: 100vw;
-                    height: auto;
-                    border-radius: 0;
-                    display: block;
-                    margin: 0;
-                }
-                .intro-titre-benevoles {
-                    order: 2;
-                    text-align: center;
-                    font-size: 2.2rem;
-                    margin: 0 auto;
-                    width: 100%;
-                }
-
-                .missions, .rejoindre {
-                    padding: 20px;
-                    width: 100%;
-                    box-sizing: border-box;
-                }
-            }
-        </style>
-    
-    </head>
-    <body>
-        <header id="main-header">
-            <nav class="header-nav">
-                <div class="nav-left">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="../pages_club/club.html" class="dropdown-toggle">Le Club</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
-                                <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
-                                <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
-                                <li><a href="../pages_club/comite.html">Comité directeur</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="triathlon.html" class="dropdown-toggle">Le Triathlon</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown dropdown-submenu">
-                                    <a href="triathlon.html" class="dropdown-toggle">Épreuves</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="formats/triathlon-s.html">Format S</a></li>
-                                        <li><a href="formats/triathlon-m.html">Format M</a></li>
-                                        <li><a href="formats/triathlon-l.html">Format L</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
-                                <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
-                                <li><a href="galerie-photo.html">Galerie Photo</a></li>
-                                <li><a href="benevoles.html">Bénévoles</a></li>
-                                <li><a href="partenaires.html">Partenaires</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-center">
-                    <a href="../index.html"><img src="../Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a href="../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div id="menu-burger" class="menu-burger">
-                    <ul id="burger-main-menu">
-                        <li>
-                            <a href="#" class="burger-link" data-target="club">Le Club</a>
-                        </li>
-                        <li>
-                            <a href="#" class="burger-link" data-target="triathlon">Le Triathlon</a>
-                        </li>
-                        <li>
-                            <a href="../contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Sous-menu Le Club -->
-                    <ul class="burger-submenu" id="submenu-club">
-                        <li><a href="#" class="burger-back">&larr; Retour</a></li>
-                        <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
-                        <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
-                        <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
-                        <li><a href="../pages_club/comite.html">Comité directeur</a></li>
-                    </ul>
-                    <!-- Sous-menu Le Triathlon -->
-                    <ul class="burger-submenu" id="submenu-triathlon">
-                        <li><a href="#" class="burger-back">&larr; Retour</a></li>
-                        <li>
-                            <a href="#" class="burger-link" data-target="epreuves">Épreuves</a>
-                        </li>
-                        <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
-                        <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
-                        <li><a href="galerie-photo.html">Galerie Photo</a></li>
-                        <li><a href="benevoles.html">Bénévoles</a></li>
-                        <li><a href="partenaires.html">Partenaires</a></li>
-                    </ul>
-                    <!-- Sous-sous-menu Épreuves -->
-                    <ul class="burger-submenu" id="submenu-epreuves">
-                        <li><a href="#" class="burger-back">&larr; Retour</a></li>
-                        <li><a href="formats/triathlon-s.html">Format S</a></li>
-                        <li><a href="formats/triathlon-m.html">Format M</a></li>
-                        <li><a href="formats/triathlon-l.html">Format L</a></li>
-                    </ul>
-                </div>
-                <a href="#" id="openBtn">
-                    <span class="burger-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </a>
-            </nav>
-        </header>
-        <main>
-            <section class="intro-benevoles">
-                <h1 class="intro-titre-benevoles">Rejoins l’aventure en tant que bénévole !</h1>
-                <a class="intro-lien-benevoles"
-                   href="https://event.recrewteer.com/v2/organization/741/event/5414/form/7495?fbclid=PAZXh0bgNhZW0CMTEAAae_m8HbHMUpbieMnZNzT_7uA_vDx3qrhk-VxBIwqio0ROJcuTBr-xvLvv4Bpg_aem__npznyWL4WY_EaQRBGLlvg"
-                   target="_blank" rel="noopener" class="button">
-                    <img class="intro-image-benevoles" src="../Images/miniature-benevoles-2023.jpg">
-                </a>
-            </section>
-
-            <h2>Pourquoi devenir bénévole ?</h2>
-            <ul>
-                <li>Participer à une belle aventure humaine : Tu feras partie d’une équipe soudée, dynamique et bienveillante.</li>
-                <li>Vivre l’événement de l’intérieur : Une autre façon de profiter de l’ambiance du triathlon, au plus près des athlètes.</li>
-                <li>Un pack bénévole : Repas, dotation et soirée, souvenirs et bonne humeur garantis !</li>
-                <li>Faire une vraie différence : Sans toi, pas de départ, pas de ravito, pas de ligne d’arrivée ! C’est toi qui fais vibrer l’événement.</li>
-            </ul>
-
-            <section class="missions">
-                <h2>Les missions possibles</h2>
-                <p>Il y a une place pour chacun·e, selon tes envies et disponibilités :</p>
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <nav class="header-nav">
+            <div class="nav-left">
                 <ul>
-                    <li>Accueil et orientation des participants</li>
-                    <li>Gestion des ravitaillements</li>
-                    <li>Signaleur·se sur le parcours</li>
-                    <li>Distribution des dossards</li>
-                    <li>Logistique, installation et rangement</li>
+                    <li class="dropdown">
+                        <a href="../pages_club/club.html" class="dropdown-toggle">Le Club</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
+                            <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
+                            <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
+                            <li><a href="../pages_club/comite.html">Comité directeur</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="triathlon.html" class="dropdown-toggle">Le Triathlon</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu">
+                                <a href="triathlon.html" class="dropdown-toggle">Épreuves</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="formats/triathlon-s.html">Format S</a></li>
+                                    <li><a href="formats/triathlon-m.html">Format M</a></li>
+                                    <li><a href="formats/triathlon-l.html">Format L</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
+                            <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
+                            <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                            <li><a href="benevoles.html">Bénévoles</a></li>
+                            <li><a href="partenaires.html">Partenaires</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <p>Pas besoin d’être sportif·ve, juste motivé·e et souriant·e ! On t’accompagne et on te briefe selon ta mission.</p>
-            </section>
+            </div>
+            <div class="nav-center">
+                <a href="../index.html"><img src="../Images/logo.png" class="logo-header" alt="Logo Urkirolak Triathlon"></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="menu-burger" class="menu-burger">
+                <ul id="burger-main-menu">
+                    <li>
+                        <a href="#" class="burger-link" data-target="club">Le Club</a>
+                    </li>
+                    <li>
+                        <a href="#" class="burger-link" data-target="triathlon">Le Triathlon</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Sous-menu Le Club -->
+                <ul class="burger-submenu" id="submenu-club">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li><a href="../pages_club/adhesion.html">Adhésion</a></li>
+                    <li><a href="../pages_club/entrainements.html">Entraînements</a></li>
+                    <li><a href="../pages_club/ecole_de_tri.html">École de triathlon</a></li>
+                    <li><a href="../pages_club/comite.html">Comité directeur</a></li>
+                </ul>
+                <!-- Sous-menu Le Triathlon -->
+                <ul class="burger-submenu" id="submenu-triathlon">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li>
+                        <a href="#" class="burger-link" data-target="epreuves">Épreuves</a>
+                    </li>
+                    <li><a href="https://in.njuko.com/triathlon-de-saint-jean-de-luz-20251734462349636?currentPage=select-competition">Inscriptions</a></li>
+                    <li><a href="https://pb-organisation.com/evenements/resultats-triathlon-de-st-jean/">Résultats</a></li>
+                    <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                    <li><a href="benevoles.html">Bénévoles</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                </ul>
+                <!-- Sous-sous-menu Épreuves -->
+                <ul class="burger-submenu" id="submenu-epreuves">
+                    <li><a href="#" class="burger-back">&larr; Retour</a></li>
+                    <li><a href="formats/triathlon-s.html">Format S</a></li>
+                    <li><a href="formats/triathlon-m.html">Format M</a></li>
+                    <li><a href="formats/triathlon-l.html">Format L</a></li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-benevoles">
+            <h1 class="intro-titre-benevoles">Rejoins l’aventure en tant que bénévole !</h1>
+            <a class="intro-lien-benevoles"
+               href="https://event.recrewteer.com/v2/organization/741/event/5414/form/7495?fbclid=PAZXh0bgNhZW0CMTEAAae_m8HbHMUpbieMnZNzT_7uA_vDx3qrhk-VxBIwqio0ROJcuTBr-xvLvv4Bpg_aem__npznyWL4WY_EaQRBGLlvg"
+               target="_blank" rel="noopener" class="button">
+                <img class="intro-image-benevoles" src="../Images/miniature-benevoles-2023.jpg" alt="Bénévoles Triathlon">
+            </a>
+        </section>
 
-            <section class="rejoindre">
-                <h2>Rejoins-nous !</h2>
-                <p>
-                    Prêt·e à faire partie de l’équipe ?<br>
-                    Remplis notre formulaire et on te recontacte rapidement avec toutes les infos pratiques.
-                </p>
-                <a href="https://event.recrewteer.com/v2/organization/741/event/5414/form/7495?fbclid=PAZXh0bgNhZW0CMTEAAae_m8HbHMUpbieMnZNzT_7uA_vDx3qrhk-VxBIwqio0ROJcuTBr-xvLvv4Bpg_aem__npznyWL4WY_EaQRBGLlvg"
-                   target="_blank" rel="noopener" class="button">Je deviens bénévole</a>
-            </section>
-        </main>
-        <footer>
-            <section class="partenaires-club">
-                <a href="https://www.instagram.com/terrederunningbidart/" target="_blank" rel="noopener">
-                    <img src="../Images/logo-TDR.png" alt="Terre De Running Bidart"></a>
-                <a href="https://www.saint-jean-de-luz.com/" target="_blank" rel="noopener">
-                    <img src="../Images/logo-sjdl.png" alt="Saint-Jean-de-Luz"></a>
-            </section>
-            <p>© 2025 Urkirolak Triathlon. Tous droits réservés.</p>
-            <p><a href="../mentions-legales.html">Mentions légales</a></p>
-        </footer>
-        <script src="../header.js"></script>
-    </body>
+        <h2>Pourquoi devenir bénévole ?</h2>
+        <ul>
+            <li>Participer à une belle aventure humaine : Tu feras partie d’une équipe soudée, dynamique et bienveillante.</li>
+            <li>Vivre l’événement de l’intérieur : Une autre façon de profiter de l’ambiance du triathlon, au plus près des athlètes.</li>
+            <li>Un pack bénévole : Repas, dotation et soirée, souvenirs et bonne humeur garantis !</li>
+            <li>Faire une vraie différence : Sans toi, pas de départ, pas de ravito, pas de ligne d’arrivée ! C’est toi qui fais vibrer l’événement.</li>
+        </ul>
+
+        <section class="missions">
+            <h2>Les missions possibles</h2>
+            <p>Il y a une place pour chacun·e, selon tes envies et disponibilités :</p>
+            <ul>
+                <li>Accueil et orientation des participants</li>
+                <li>Gestion des ravitaillements</li>
+                <li>Signaleur·se sur le parcours</li>
+                <li>Distribution des dossards</li>
+                <li>Logistique, installation et rangement</li>
+            </ul>
+            <p>Pas besoin d’être sportif·ve, juste motivé·e et souriant·e ! On t’accompagne et on te briefe selon ta mission.</p>
+        </section>
+
+        <section class="rejoindre">
+            <h2>Rejoins-nous !</h2>
+            <p>
+                Prêt·e à faire partie de l’équipe ?<br>
+                Remplis notre formulaire et on te recontacte rapidement avec toutes les infos pratiques.
+            </p>
+            <a href="https://event.recrewteer.com/v2/organization/741/event/5414/form/7495?fbclid=PAZXh0bgNhZW0CMTEAAae_m8HbHMUpbieMnZNzT_7uA_vDx3qrhk-VxBIwqio0ROJcuTBr-xvLvv4Bpg_aem__npznyWL4WY_EaQRBGLlvg"
+               target="_blank" rel="noopener" class="button">Je deviens bénévole</a>
+        </section>
+    </main>
+    <footer>
+        <section class="partenaires-club">
+            <a href="https://www.instagram.com/terrederunningbidart/" target="_blank" rel="noopener">
+                <img src="../Images/logo-TDR.png" alt="Terre De Running Bidart">
+            </a>
+            <a href="https://www.saint-jean-de-luz.com/" target="_blank" rel="noopener">
+                <img src="../Images/logo-sjdl.png" alt="Saint-Jean-de-Luz">
+            </a>
+        </section>
+        <p>© 2025 Urkirolak Triathlon. Tous droits réservés.</p>
+        <p><a href="../mentions-legales.html">Mentions légales</a></p>
+    </footer>
+    <script src="../header.js"></script>
+</body>
 </html>
