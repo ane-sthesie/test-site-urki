@@ -254,24 +254,55 @@ header.scrolled .logo-header {
   left: 0;
 }
 
-.menu-burger .close {
-  position: absolute;
-  top: 10px;
-  right: 35px;
-  font-size: 5rem;
-  color: #000;
+.menu-toggle {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
   cursor: pointer;
-  z-index: 10; /* Assure que la croix est au-dessus des menus */
+  z-index: 1002;
 }
 
-/* Icône burger */
-.burger-icon span {
+.menu-toggle span {
   display: block;
-  width: 35px;
-  height: 5px;
-  background-color: #1C2526;
-  margin: 6px 0;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #1c2526ff;
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.25s ease-in-out;
 }
+
+.menu-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 10px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 20px;
+}
+
+.menu-toggle.is-active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu-toggle.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.is-active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
 
 /* Flèche à droite des liens ayant un sous-menu dans le menu burger */
 .menu-burger .burger-link::after {
@@ -313,6 +344,17 @@ header.scrolled .logo-header {
   }
 
   .menu-burger {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .menu-toggle {
     display: block;
   }
 }

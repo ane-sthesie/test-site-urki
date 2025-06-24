@@ -58,3 +58,11 @@ document.querySelectorAll('.burger-back').forEach(back => {
         document.getElementById('burger-main-menu').style.display = 'block';
     });
 });
+
+const toggleButton = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu-burger');
+
+toggleButton.addEventListener('click', () => {
+  toggleButton.classList.toggle('is-active');
+  menu.classList.toggle('active');
+});
