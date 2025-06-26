@@ -9,6 +9,7 @@ argent: #a9a9a9ff;
 
 /* Flèche sympa : https://codepen.io/shawnlooi/pen/eeXmrQ */
 
+
 html {
   font-size: 16px;
 }
@@ -192,4 +193,11 @@ main a{
     padding: 1.2rem 2rem;
   }
 
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 60px;
+    padding-top: 0px; 
+  }
 }

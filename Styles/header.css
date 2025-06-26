@@ -22,7 +22,7 @@ header.scrolled .logo-header {
 .header-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   padding: 0 10px;
   width: calc(100% - 20px);
   margin: 0 auto;
@@ -178,10 +178,10 @@ header.scrolled .logo-header {
   }
 
   header.scrolled {
-    max-height: 60px;
+    max-height: 50px;
   }
   header.scrolled .logo-header {
-    max-height: 40px;
+    max-height: 30px;
   }
 }
 
@@ -300,6 +300,14 @@ header.scrolled .logo-header {
   top: 10px;
 }
 
+header.scrolled .menu-toggle {
+  width: 25px;
+  height: 20px;
+}
+
+header.scrolled .menu-toggle span {
+  height: 4px;
+}
 
 /* Flèche à droite des liens ayant un sous-menu dans le menu burger */
 .menu-burger .burger-link::after {
