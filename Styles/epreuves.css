@@ -159,3 +159,9 @@
 
 }
 
+.annonce-ouverture-inscription {
+    font-weight: bold;
+    color: #b22222;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
