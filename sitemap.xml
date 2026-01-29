@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Pages racine -->
+  <url>
+    <loc>https://urkirolak-triathlon.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/mentions-legales.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+
+  <!-- PAGES CLUB -->
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_club/adhesion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_club/club.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_club/comite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_club/ecole_de_tri.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_club/entrainements.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- PAGES TRIATHLON – FORMATS -->
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/formats/triathlon-m.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/formats/triathlon-l.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/formats/triathlon-s.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <!-- AUTRES PAGES TRIATHLON -->
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/benevoles.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/galerie-photo.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/partenaires.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://urkirolak-triathlon.com/pages_triathlon/triathlon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
