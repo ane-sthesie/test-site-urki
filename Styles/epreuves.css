@@ -49,6 +49,10 @@
     align-self: start; 
 }
 
+.intro .button:hover {
+    background-color: #1c2526ff;
+}
+
 .sport{
     margin-top: 20px;
     display:grid;
