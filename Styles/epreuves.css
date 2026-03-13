@@ -53,6 +53,14 @@
     background-color: #1c2526ff;
 }
 
+.boutons-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
 .sport{
     margin-top: 20px;
     display:grid;
