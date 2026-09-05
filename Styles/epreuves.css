@@ -49,6 +49,18 @@
     align-self: start; 
 }
 
+.intro .button:hover {
+    background-color: #1c2526ff;
+}
+
+.boutons-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
 .sport{
     margin-top: 20px;
     display:grid;
@@ -160,8 +172,6 @@
 }
 
 .annonce-ouverture-inscription {
+    font-size: 2em;
     font-weight: bold;
-    color: #b22222;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
 }
